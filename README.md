@@ -40,5 +40,5 @@ Todo App을 통해 일정을 쉽게 관리하고 할일을 놓치지 않을 수 
 ---
 
 
-### <img src="./public/todo_app_logo.png" width="45" height="45"> 
+### <img src="./public/todo_app_logo.png" width="40" height="40"> 
 
