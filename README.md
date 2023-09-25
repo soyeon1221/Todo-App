@@ -17,10 +17,11 @@ Todo App을 통해 일정을 쉽게 관리하고 할일을 놓치지 않을 수 
 ### &#128311; 기술 스택 및 라이브러리
 
 - <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
-- JavaScript
 - <img src="https://img.shields.io/badge/JavaScript-ECD53F?style=flat&logo=JavaScript&logoColor=white"/>
 - HTML5
+- <img src="https://img.shields.io/badge/HTML5-F46D01?style=flat&logo=HTML5&logoColor=white"/>
 - CSS3
+- <img src="https://img.shields.io/badge/CSS3-2490D7?style=flat&logo=CSS3&logoColor=white"/>
 
 ---
 
