@@ -42,3 +42,6 @@ Todo App을 통해 일정을 쉽게 관리하고 할일을 놓치지 않을 수 
 
 ### <img src="./public/todo_app_logo.png" width="40" height="40"> 
 
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=footer)
+
