@@ -16,7 +16,7 @@ Todo App을 통해 일정을 쉽게 관리하고 할일을 놓치지 않을 수 
 
 ### &#128311; 기술 스택 및 라이브러리
 
-- React
+- <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>
 - JavaScript
 - HTML5
 - CSS3
@@ -40,6 +40,5 @@ Todo App을 통해 일정을 쉽게 관리하고 할일을 놓치지 않을 수 
 ---
 
 
-<p align="center">
-  <img src="./public/todo_app_logo.png" width="150" height="150">
-</p>
+### <img src="./public/todo_app_logo.png" width="45" height="45"> 
+
