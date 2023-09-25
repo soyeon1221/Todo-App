@@ -1,0 +1,202 @@
+:root {
+  /* :root는 html 문서를 나타낸다 */
+  /* root엘리먼트 = html */
+  /* root엘리먼트 변수 선언 */
+  --primary: rgb(84, 194, 235);
+  --secondary: #364864;
+  --success: rgb(158, 219, 247);
+  --danger: rgb(243, 94, 94);
+}
+
+* {
+  /* *는 전체선택자 : 모든 엘리먼트에 적용하고 싶을때 사용 */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+}
+
+a {
+  color: #000;
+}
+
+button {
+  font-size: 1rem;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  /* 수도클래스 : 특정한 상태의 엘리먼트를 선택하는 방법 */
+  /* add버튼이 disabled 상태 : 클릭할수 없는상태 */
+  opacity: 0.25;
+  cursor: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* app */
+.app-title {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  max-width: 24rem;
+  margin: 50px auto 0;
+  padding: 0 1rem 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.remaining {
+  margin: 1.2rem 0.5rem;
+}
+
+/* form */
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.add-input {
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border: 2px solid var(--secondary);
+  /* 위에서 설정한 변수를 선언할때 var() 사용한다 */
+  outline: none;
+}
+
+.add-btn {
+  padding: 0.5rem;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+/* filter buttons */
+.filter-btn-group {
+  display: flex;
+  gap: 0.25rem;
+  /* flex에도 gap이 있음 */
+  /* item 사이에 공간이 필요할때 gap 사용 */
+}
+
+.filter-btn {
+  padding: 0.5rem;
+  /* flex: flex-shrink flex-grow flex-basis */
+  /* shrink는 기본값이 1, grow는 기본값이 0, basis는 기본값이 auto */
+  /* container안에서 item의 너비를 똑같이 하고싶을때 사용함 */
+  /* basis를 auto로 하고 grow를 1로 적용하면 item의 너비가 똑같아진다 */
+  flex: 1 1 0;
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.filter-btn.active {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+/* todo item */
+.todo-item {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.view-template, .edit-template {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.todo-checkbox {
+  /* display: none; */
+
+  width: 1rem;
+  height: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.todo-name {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.todo-checkbox:checked + .todo-name {
+  /* + 는 형제선택자 : 바로 뒤에 오는 class를 선택할때 사용 */
+  /* todo-app에서 name을 check했을때 줄을 긋기 위해서 사용함 */
+  text-decoration: line-through;
+  text-decoration-color: var(--secondary);
+  color: #ddd;
+}
+
+.view-btn-group {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.view-btn-group button {
+  padding: 0.5rem;
+  flex: 1 1 0;
+  /* 버튼의 크기를 갖게하기 위해서 flex 사용 */
+}
+
+.edit-btn {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.delete-btn {
+  border: 2px solid var(--danger);
+  color: var(--danger);
+}
+
+.edit-input {
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  outline: none;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.edit-btn-group {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.edit-btn-group button {
+  flex: 1 1 0;
+  padding: 0.5rem;
+}
+
+.cancel-btn {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.save-btn {
+  /* border: 2px solid var(--success);
+  color: var(--success); */
+  border: 2px solid var(--success);
+  background-color: var(--success);
+  color: #fff;
+}
