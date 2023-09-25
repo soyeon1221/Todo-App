@@ -18,7 +18,7 @@ Todo App을 통해 일정을 쉽게 관리하고 할일을 놓치지 않을 수 
 
 - <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
 - JavaScript
-- <img src="https://img.shields.io/badge/JavaScript-#ECD53F?style=flat&logo=JavaScript&logoColor=white"/>
+- <img src="https://img.shields.io/badge/JavaScript-ECD53F?style=flat&logo=JavaScript&logoColor=white"/>
 - HTML5
 - CSS3
 
