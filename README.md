@@ -42,6 +42,9 @@ Todo App을 통해 일정을 쉽게 관리하고 할일을 놓치지 않을 수 
 
 ## &#128311; 할일 목록 바로가기
 
-[<img src="./public/todo_app_logo.png" width="40" height="40">](https://soyeon1221.github.io/Todo-App) 
+[<img src="./public/todo_app_logo.png" width="40" height="40">](https://soyeon1221.github.io/Todo-App) 아이콘 클릭!
+<br><br>
+![할일목록](https://github.com/soyeon1221/Todo-App/assets/121142418/224359f2-3742-416e-9107-bf2cd2af6a33)
+
 
 
