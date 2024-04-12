@@ -54,13 +54,13 @@ Todo App을 통해 일정을 쉽게 관리하고 할일을 놓치지 않을 수 
 - 할 일 항목을 수정하거나 삭제할 수 있습니다.
 
 ### 1. 메인
-<img src="https://github.com/soyeon1221/Todo-App/assets/121142418/4ce0d7ee-801f-4a2f-b8c4-66fd1f528e9c" width="560px" height="480px">
+<img src="https://github.com/soyeon1221/Todo-App/assets/121142418/4ce0d7ee-801f-4a2f-b8c4-66fd1f528e9c" width="720px" height="480px">
 
 - 
 
 
 ### 2. 수정 / 삭제
-<img src="https://github.com/soyeon1221/Todo-App/assets/121142418/ea8da505-368c-4ced-a448-b7594d338274" width="560px" height="480px">
+<img src="https://github.com/soyeon1221/Todo-App/assets/121142418/ea8da505-368c-4ced-a448-b7594d338274" width="720px" height="480px">
 
 - useRef Hook과 useEffect를 사용해서 수정 버튼을 눌렀을 때 input에 커서가 맞춰지도록 설정했습니다. 
 - trim 메서드 : 불필요한 공백을 제거한다 / name 입력했을때만 button 활성화 (한글자라도)
