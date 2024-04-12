@@ -9,6 +9,7 @@ React를 활용하여 할일 목록 앱을 만들었습니다.
 ###### 3. [기술 스택 및 라이브러리](#-기술-스택-및-라이브러리)
 ###### 4. [개발 기간](#-개발-기간)
 ###### 5. [주요 기능](#-주요-기능)
+###### 6. [느낀점](#-느낀점)
 
 <br>
 
@@ -53,22 +54,31 @@ Todo App을 통해 일정을 쉽게 관리하고 할일을 놓치지 않을 수 
 - 할 일 항목을 수정하거나 삭제할 수 있습니다.
 
 ### 1. 메인
-<img src="https://github.com/soyeon1221/Todo-App/assets/121142418/5c721e7e-690a-445d-8ddb-477a377638b8" width="280px" height="500px">
+<img src="https://github.com/soyeon1221/Todo-App/assets/121142418/4ce0d7ee-801f-4a2f-b8c4-66fd1f528e9c" width="560px" height="500px">
 
-- 공공데이터 포털 API를 활용하여 제작하였습니다.
-- 연도와 지역별로 지도, 막대차트를 확인할 수 있도록 구현하였습니다.
+- 
 
 
-### 2. 체크리스트
-<img src="https://github.com/soyeon1221/Todo-App/assets/121142418/dd188fce-f88f-4c75-a654-75f49c395a7b" width="560px" height="500px">
+### 2. 수정 / 삭제
+<img src="https://github.com/soyeon1221/Todo-App/assets/121142418/ea8da505-368c-4ced-a448-b7594d338274" width="560px" height="500px">
 
-- 공공데이터 포털 API를 활용하여 제작하였습니다.
-- 연도와 지역별로 지도, 막대차트를 확인할 수 있도록 구현하였습니다.
-
+- useRef Hook과 useEffect를 사용해서 수정 버튼을 눌렀을 때 input에 커서가 맞춰지도록 설정했습니다. 
+- trim 메서드 : 불필요한 공백을 제거한다 / name 입력했을때만 button 활성화 (한글자라도)
 
 ### 3. 전체 / 완료 / 진행중
 <img src="https://github.com/soyeon1221/Todo-App/assets/121142418/e593cc74-a821-4056-9677-af6a70d7e64e" width="840px" height="500px">
 
-- 공공데이터 포털 API를 활용하여 제작하였습니다.
-- 연도와 지역별로 지도, 막대차트를 확인할 수 있도록 구현하였습니다.
+- saveDoc 함수를 사용하여 로컬스토리지에 동기화하여 새로고침을 방지할 수 있었고,
+- ‘전체’, ‘진행중’, ‘완료’ 3가지 객체를 생성해서 버튼을 눌렀을 때 해당 데이터만 나타나게 하기 위해서 filter 메서드를 사용했습니다.
 
+<br>
+
+
+### [배운점]
+#### 1. CSS
+- root엘리먼트 변수선언 / 위에서 설정한 변수를 선언할때 var() 사용한다
+- add버튼이 disabled 상태 : 클릭할수 없는상태
+- flex: flex-shrink flex-grow flex-basis
+  shrink는 기본값이 1, grow는 기본값이 0, basis는 기본값이 auto
+  container안에서 item의 너비를 똑같이 하고싶을때 사용함
+  basis를 auto로 하고 grow를 1로 적용하면 item의 너비가 똑같아진다

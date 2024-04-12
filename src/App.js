@@ -382,7 +382,7 @@ function Todo( { id, name, completed, deleteTask, toggleTaskCompleted, editTask 
   2. Todo 컴포넌트에서 useEffect를 사용하는이유
 
   useEffect는 return이 끝나고 나서 호출된다 (비동기적으로 작동한다)
-  return을 해서 실제 엘리멑느에 주입한 다음에 input에 접근할수있다
+  return을 해서 실제 엘리먼트에 주입한 다음에 input에 접근할수있다
   그래서 비동기적으로 작동해야 한다
   editingTemplated는 가상의 엘리먼트이기 때문에
   실제로 엘리먼트가 주입되고 나서 작동해야 하므로 useEffect를 사용한다
